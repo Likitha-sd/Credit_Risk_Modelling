@@ -1,4 +1,4 @@
-### 💳 Credit Risk Prediction App
+## 💳 Credit Risk Prediction App
 
 ## 🔍 Overview
 
@@ -7,13 +7,13 @@ It combines data preprocessing, model training, hyperparameter tuning, and deplo
 
 ##⚙️ Tech Stack
 
-# Python: pandas, numpy, seaborn, matplotlib
+Python: pandas, numpy, seaborn, matplotlib
 
-# Machine Learning: scikit-learn (Decision Tree, Random Forest, Extra Trees), XGBoost
+ Machine Learning: scikit-learn (Decision Tree, Random Forest, Extra Trees), XGBoost
 
-# Model Persistence: joblib
+ Model Persistence: joblib
 
-# Deployment: Streamlit
+#Deployment: Streamlit
 
 # 📂 Project Structure
 Code
@@ -85,5 +85,5 @@ Interactive Streamlit app for real-time predictions
 
 Demonstrates fintech + AI skills relevant to credit scoring and risk management
 
-📸 Demo Screenshot
-(Add a screenshot of your Streamlit app here for visual appeal
+## 📸 Demo Screenshot
+
