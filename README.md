@@ -1,5 +1,9 @@
 ## 💳 Credit Risk Prediction App
 
+### Streamlit Live Link
+
+https://creditriskmodelling-qxqxjzz64utmh8ckugqpeu.streamlit.app/
+
 ## 🔍 Overview
 
 This project is an end-to-end Machine Learning application that predicts whether a loan applicant is a Good Credit Risk or Bad Credit Risk.
