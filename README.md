@@ -1,18 +1,21 @@
-💳 Credit Risk Prediction App
-🔍 Overview
+### 💳 Credit Risk Prediction App
+
+## 🔍 Overview
+
 This project is an end-to-end Machine Learning application that predicts whether a loan applicant is a Good Credit Risk or Bad Credit Risk.
 It combines data preprocessing, model training, hyperparameter tuning, and deployment into a user-friendly Streamlit app.
 
-⚙️ Tech Stack
-Python: pandas, numpy, seaborn, matplotlib
+##⚙️ Tech Stack
 
-Machine Learning: scikit-learn (Decision Tree, Random Forest, Extra Trees), XGBoost
+# Python: pandas, numpy, seaborn, matplotlib
 
-Model Persistence: joblib
+# Machine Learning: scikit-learn (Decision Tree, Random Forest, Extra Trees), XGBoost
 
-Deployment: Streamlit
+# Model Persistence: joblib
 
-📂 Project Structure
+# Deployment: Streamlit
+
+# 📂 Project Structure
 Code
 ├── app.py                        # Streamlit app
 ├── german_credit_data.csv        # Dataset
@@ -23,40 +26,47 @@ Code
 ├── Checking account_encoder.pkl  # Label encoder for Checking account
 ├── target_encoder.pkl            # Label encoder for Risk
 └── README.md                     # Documentation
-🚀 How to Run
-Clone the repository:
 
-bash
+## 🚀 How to Run
+
+# Clone the repository:
+
+# bash
 git clone <repo-url>
 cd Credit-Risk-Prediction
 Install dependencies:
 
-bash
+# bash
 pip install -r requirements.txt
 Run the app:
 
-bash
+# bash
 streamlit run app.py
-Open in browser:
 
-Local: http://localhost:8501
+## Open in browser:
 
-Network: http://<your-ip>:8501
+# Local:
+http://localhost:8501
 
-🖥️ Usage
+# Network: 
+http://<your-ip>:8501
+
+## 🖥️ Usage
+
 Enter applicant details:
 
 Age, Sex, Job, Housing, Saving Accounts, Checking Account, Credit Amount, Duration
 
 Click Predict Risk
 
-Output:
+## Output:
 
 ✅ GOOD Credit Risk
 
 ❌ BAD Credit Risk
 
-📈 Model Performance
+## 📈 Model Performance
+
 Model	Accuracy	Notes
 Decision Tree	~58%	Simple baseline
 Random Forest	~62%	Ensemble improvement
@@ -64,9 +74,9 @@ Extra Trees	~65%	Best performing model
 XGBoost	~67%	Strong but heavier
 
 
-👉 Final deployed model: Extra Trees Classifier
+## 👉 Final deployed model: Extra Trees Classifier
 
-🌟 Key Highlights
+## 🌟 Key Highlights
 End-to-end ML pipeline: EDA → Feature Engineering → Model Training → Deployment
 
 Encoders saved with joblib for categorical features
