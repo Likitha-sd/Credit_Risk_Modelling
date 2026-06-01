@@ -1,74 +1,79 @@
-📊 Credit Risk Modelling with Explainable AI
-📌 Overview
-This project builds and deploys a machine learning model to predict whether a bank customer is a good or bad credit risk.
-It leverages Logistic Regression, Decision Trees, Random Forest, and XGBoost, integrated into a Streamlit web application for real‑time scoring.
+💳 Credit Risk Prediction App
+🔍 Overview
+This project is an end-to-end Machine Learning application that predicts whether a loan applicant is a Good Credit Risk or Bad Credit Risk.
+It combines data preprocessing, model training, hyperparameter tuning, and deployment into a user-friendly Streamlit app.
 
-The goal is to demonstrate end‑to‑end ML deployment in a banking/fintech context, with a focus on risk management and compliance.
+⚙️ Tech Stack
+Python: pandas, numpy, seaborn, matplotlib
 
-🎯 Features
-Predicts credit risk based on customer attributes (Age, Job, Housing, Saving/Checking accounts, Credit Amount, Duration, Purpose).
+Machine Learning: scikit-learn (Decision Tree, Random Forest, Extra Trees), XGBoost
 
-Interactive Streamlit app for real‑time customer scoring.
+Model Persistence: joblib
 
-Modular pipeline for data preprocessing, model training, and evaluation.
-
-Ready for explainability integration (SHAP/LIME) to meet regulatory requirements.
-
-Scalable design for handling large datasets.
-
-🛠 Tech Stack
-Python 3.9+
-
-Libraries: pandas, numpy, scikit-learn, xgboost, matplotlib, seaborn, streamlit, joblib
-
-Deployment: Streamlit (local or cloud hosting)
-
-Dataset: German Credit Risk dataset / custom bank dataset
+Deployment: Streamlit
 
 📂 Project Structure
 Code
-├── data/                # Raw dataset (e.g., data.csv)
-├── notebooks/           # Jupyter notebooks for EDA
-├── models/              # Trained models (.pkl/.joblib)
-├── scripts/             # Preprocessing & training scripts
-├── app.py               # Streamlit app for deployment
-├── requirements.txt     # Dependencies
-└── README.md            # Project documentation
+├── app.py                        # Streamlit app
+├── german_credit_data.csv        # Dataset
+├── extra_trees_credit_model.pkl  # Trained Extra Trees model
+├── Sex_encoder.pkl               # Label encoder for Sex
+├── Housing_encoder.pkl           # Label encoder for Housing
+├── Saving accounts_encoder.pkl   # Label encoder for Saving accounts
+├── Checking account_encoder.pkl  # Label encoder for Checking account
+├── target_encoder.pkl            # Label encoder for Risk
+└── README.md                     # Documentation
 🚀 How to Run
 Clone the repository:
 
 bash
-git clone https://github.com/yourusername/credit-risk-modelling.git
-cd credit-risk-modelling
+git clone <repo-url>
+cd Credit-Risk-Prediction
 Install dependencies:
 
 bash
 pip install -r requirements.txt
-Run the Streamlit app:
+Run the app:
 
 bash
 streamlit run app.py
-Open the app in your browser at http://localhost:8501.
+Open in browser:
 
-📊 Results
-Achieved ~87% accuracy using XGBoost.
+Local: http://localhost:8501
 
-Streamlit app provides real-time predictions.
+Network: http://<your-ip>:8501
 
-Planned integration of SHAP explainability for transparent decision-making.
+🖥️ Usage
+Enter applicant details:
 
-📌 Future Work
-Add SHAP/LIME explainability to highlight feature importance.
+Age, Sex, Job, Housing, Saving Accounts, Checking Account, Credit Amount, Duration
 
-Build dashboard layer for customer risk segmentation.
+Click Predict Risk
 
-Optimize inference speed for large-scale deployment.
+Output:
 
-🏦 Business Impact
-This project demonstrates how banks can:
+✅ GOOD Credit Risk
 
-Automate credit scoring.
+❌ BAD Credit Risk
 
-Improve risk management.
+📈 Model Performance
+Model	Accuracy	Notes
+Decision Tree	~58%	Simple baseline
+Random Forest	~62%	Ensemble improvement
+Extra Trees	~65%	Best performing model
+XGBoost	~67%	Strong but heavier
 
-Ensure regulatory compliance with explainable AI.
+
+👉 Final deployed model: Extra Trees Classifier
+
+🌟 Key Highlights
+End-to-end ML pipeline: EDA → Feature Engineering → Model Training → Deployment
+
+Encoders saved with joblib for categorical features
+
+Interactive Streamlit app for real-time predictions
+
+Demonstrates fintech + AI skills relevant to credit scoring and risk management
+
+📸 Demo Screenshot
+(Add a screenshot of your Streamlit app here for visual appeal
