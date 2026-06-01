@@ -4,6 +4,11 @@
 
 https://creditriskmodelling-qxqxjzz64utmh8ckugqpeu.streamlit.app/
 
+### App Demo Image
+
+<img width="1026" height="906" alt="Screenshot_1-6-2026_181331_localhost" src="https://github.com/user-attachments/assets/8e9460eb-19d8-4249-b612-919dfbbaf4a6" />
+
+
 ## 🔍 Overview
 
 This project is an end-to-end Machine Learning application that predicts whether a loan applicant is a Good Credit Risk or Bad Credit Risk.
